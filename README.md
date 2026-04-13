@@ -16,9 +16,11 @@ Personally I recommend creating an alias "wp" for "waypoint" for faster use
 ## Installation
 ```
 # Check if you have the requirements for installing before running, please.
-git clone https://github.com/cairoGarcia/waypoint;
-cd waypoint; sh install.sh;
-cd ..; rm -fr waypoint;
+git clone https://github.com/cairoGarcia/waypoint
+cd waypoint
+sh install.sh
+cd ..
+rm -fr waypoint
 ```
 
 ## Compatibility

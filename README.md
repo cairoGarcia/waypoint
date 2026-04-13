@@ -1,6 +1,7 @@
-# Waypoint
+![](https://raw.githubusercontent.com/cairoGarcia/waypoint/master/media/logo.banner.png)
+# Waypoint is a fast travel map for the shell
 
-Waypoint is a fast travel map for the terminal.
+![](https://raw.githubusercontent.com/cairoGarcia/waypoint/master/media/index.gif)
 
 ## Requirements
 

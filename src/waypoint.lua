@@ -2,6 +2,25 @@
 
 require("os")
 
+-- Help prompt
+local function help()
+        print("Seems like you need help here!\
+    Args and index are optional\
+    Usage example:\
+        [command] [option*] [index*]\
+    Try one of the following options:\
+        [index]               rollback*\
+        [b    ]          last waypoint*\
+        [clear]    clear all waypoints*\
+        [ls   ]    lists all waypoints*\
+        [none ]   add dir to waypoints*\
+    You also have to add an alias to \". waypoint\" to your shell rc")
+end
+
+local function isint(opt)
+  return not (opt == "" or opt:find("%D"))
+end
+
 local function pwd()
     local handle = io.popen("pwd")
     if (handle == nil)
@@ -145,21 +164,11 @@ then
 elseif (arg[1] == "b")
 then
     rollback_waypoint(arg[1])
-elseif (arg[1])
+
+elseif (isint(arg[1]) == true)
 then
     rollback_waypoint(tonumber(arg[1]))
 
 else
-    print("Seems like you need help here!\
-Usage example:\
-    [command] [option*] [index*]\
-Args and index are optional\
-    Try one of the following options:\
-    [r][index]   (rollback)\
-    [b]          (last waypoint)\
-    [clear]       (clear all waypoints)\
-    [ls]          (lists all waypoints)\
-    [none]        (adds the current dir to waypoints)\
-You also have to add an alias to \". command\" to your .bashrc")
-    return
+    help()
 end

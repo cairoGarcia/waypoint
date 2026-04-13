@@ -16,8 +16,6 @@ waypoint_lua() {
         echo "Files:"
         ls -a
     fi
-    
-    return
 }
 
 waypoint_lua $OPT

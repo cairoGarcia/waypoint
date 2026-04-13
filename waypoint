@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+OPT=$1
+
+waypoint_lua() {
+    RESULT=$(~/.local/bin/waypoint.lua $1)
+
+    if [ -n "$RESULT" ]
+    then
+        echo "$RESULT"
+    fi
+
+    if [[ "$1" =~ ^[0-9]+$ ]] || [ "$1" == "b" ]
+    then
+        cd "$RESULT"
+        echo "Files:"
+        ls -a
+    fi
+    
+    return
+}
+
+waypoint_lua $OPT

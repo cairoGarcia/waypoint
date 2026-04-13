@@ -1,5 +1,6 @@
 ![](https://raw.githubusercontent.com/cairoGarcia/waypoint/master/media/logo.banner.png)
 # Waypoint is a fast travel map for the shell
+## Travel between directiories quickly
 
 ![](https://raw.githubusercontent.com/cairoGarcia/waypoint/master/media/index.gif)
 

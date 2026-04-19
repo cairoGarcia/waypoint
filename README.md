@@ -11,8 +11,8 @@ Personally I recommend creating an alias "wp" for "waypoint" for faster use
 
 ## Requirements
 
-- **sh** (Posix-shell used in the back-end)
-- **Lua interpreter**
+- **bash** (Posix-shell used in the back-end)
+- **lua interpreter**
 
 ## Installation
 ```
@@ -32,7 +32,6 @@ List of Confirmed working shells below
 | TESTED SHELLS |  WORKS?  |
 | :------------ |  :----:  |
 | zsh           |     yes  | 
-| sh            |     yes  |
 | bash          |     yes  |
 | dash          |     yes  |
 | fish          |      no  |
